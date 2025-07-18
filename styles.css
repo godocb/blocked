@@ -1,0 +1,38 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #222;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#random-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    padding: 32px 48px;
+    border-radius: 16px;
+    font-size: 2.5rem;
+    text-align: center;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.3);
+    max-width: 80vw;
+    word-break: break-word;
+}

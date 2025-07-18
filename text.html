@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bad website</title>
+    <meta name="viewport" content="width=900, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flittlebabyandcie.com%2Fwp-content%2Fuploads%2F2024%2F04%2FPHOTO-SITE-142.png&f=1&nofb=1&ipt=3847929621927b9202afabfadbc0cacb15d1d358336015adbdd1dc7716c2fd5a">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            background: #222;
+            color: #fff;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .text-only-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.5rem;
+            background: rgba(0,0,0,0.5);
+            padding: 32px 48px;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 80vw;
+            word-break: break-word;
+            box-shadow: 0 4px 32px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="text-only-center" id="text-content"></div>
+    <script>
+        // Get the 'text' query parameter and display it
+        const params = new URLSearchParams(window.location.search);
+        const text = params.get('text') || '';
+        document.getElementById('text-content').textContent = text;
+    </script>
+</body>
+</html>
